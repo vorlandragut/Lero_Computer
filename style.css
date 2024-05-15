@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.img-container {
+  perspective: 1000px;
+}
+
+.img-container img {
+  transition: transform 0.5s;
+}
+
+.img-container:hover img {
+  transform: rotateY(30deg);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
+
+.jumbotron {
+  padding-top: 8rem;
+  background-color: #e2edff;
+}
+
+#owner {
+  background-color: #e2edff;
+}
+
+.finance {
+  background-color: #ffff;
+}
+
+#manager.M {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
